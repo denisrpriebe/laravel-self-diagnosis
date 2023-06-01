@@ -74,7 +74,7 @@ class RedisCanBeAccessed implements Check
     private function testConnection(string $name = null): bool
     {
         $connection = Redis::connection($name);
-        $connection->connect();
+//        $connection->connect();
         return $connection->isConnected();
     }
 }
